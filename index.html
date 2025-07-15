@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME PAGE</title>
+    <style>
+        .parent-header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(29, 21, 17);
+  position: fixed;
+  top: 0;
+  width: 99%;
+}
+
+li {
+  float: left;
+}
+
+.header {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(236, 240, 14);
+}
+
+.active {
+  background-color: aqua;
+}
+.one{
+    text-align: center;
+    justify-content: center;
+    text-decoration: aqua;
+    padding: 15%;
+    
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.D{
+    border: 100px;
+    padding: 20px;
+    width: 200px;
+    font-size: larger;
+    flood-color: aqua;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.D :hover{
+    background-color: blue;
+    color: brown;
+}
+footer{
+  background-color: #141313;
+  color: #fff;
+  padding: 40px 0;
+}
+.footer-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+max-width: 1200px;
+margin: 0 auto;
+}
+.footer-section{
+  width: 25%;
+  margin: 20px;
+}
+.footer-section h3{
+  margin-top: 0;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-section li {
+  margin-bottom: 10px;
+}
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-section a:hover {
+  color: #ccc;
+}
+.social-media li{
+  margin-right: 20px;
+}
+.facebook::before{
+  content: "\f09a";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 10px;
+}
+.twitter::before{
+  content: "\f099";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 10px;
+}
+.instagram::before{
+  content: "\f16d";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 10px;
+}
+.copyright{
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+    </style>
+</head>
+<body>
+    <div style="background-image: url(background.jpg);">
+       
+        <div style="background-image: url(background.jpg);">
+            <ul class="parent-header">
+  <li><a href="index.html" class="header">Home</a></li>
+  <li><a href="about.html" class="header">About</a></li>
+  <li><a href="contact.html" class="header">Contact</a></li>
+  <li style="float:right"><a class="header" href="login.html" style="color: #ffffff;">LOGIN</a></li>
+</ul>
+               <div><span style="text-align: left;"><h2 style="color: aqua;">N<span style="color: black;">H</span>S</h2></span></div>
+            
+            
+        </div>
+       <div class="one"> <h1> Welcome to <span style="color: aqua;">National Hybrid Siwes</span></h1>
+    <h3 style="font-family: 'Courier New', Courier;">Turn your SIWES into a Digital Career Launchpad</h3>
+    <button class="D" style="background-color: rgb(27, 182, 148);">Get Started</button>
+    <button onclick="document.location='sign.html'"class="D" style="background-color: rgb(139, 132, 124);"> Sign up</button></a><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Created By </h3>
+          <p>SAIDU,Al-amin Hassan</p>
+          <p>from IBB University Lapai</p>
+        </div>
+        <div class="footer-section">
+          <h3>Team</h3>
+          <p>Team 5IRE</p>
+          <p>IBBUl Chapter</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><a href="mailto:alaminha2030@gmail.com">alaminha2030@gmail.com</a></p>
+          <p><a href="tel:+2349035970606">+2349035970606</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul class="social-media">
+            <li><a href="" class="facebook">Facebook</a></li>
+            <li><a href="" class="instagram">instagram</a></li
+           <li><a href="" class="twitter">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025. All rights reserved.</p>
+      </div>
+    </footer>
+</body>
+</html>
+
