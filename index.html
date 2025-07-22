@@ -117,12 +117,24 @@ margin: 0 auto;
   padding-top: 20px;
   border-top: 1px solid #444;
 }
+.background{
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  height: 150%;
+  width: 100%;
+  z-index: -1;
+  fill-opacity: inherit;
+  opacity: 0.5; /*image opacity*/
+}
     </style>
 </head>
 <body>
-    <div style="background-image: url(background.jpg);">
+    <div>
+      <div class="background"></div>
        
-        <div style="background-image: url(background.jpg);">
+        <div>
             <ul class="parent-header">
   <li><a href="index.html" class="header">Home</a></li>
   <li><a href="about.html" class="header">About</a></li>

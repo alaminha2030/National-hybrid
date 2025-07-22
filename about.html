@@ -68,9 +68,11 @@ li a:hover:not(.active) {
         }
     .container{
         text-align: center;
+        padding: 20px;
     }
     .row{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 20px;
     }
@@ -84,7 +86,9 @@ li a:hover:not(.active) {
     }
     .image-container{
         display: inline-block;
-        margin: 0 10px;
+        margin: 10px;
+        width: 120px;
+
     }
     .image-container img{
         width: 200px;
@@ -103,6 +107,12 @@ li a:hover:not(.active) {
     }
     p{
         color: white;
+    }
+    /*Responsive layout for smaller screend*/
+    @media(max-width:600px){
+        .image-container{
+            width: 45%;
+        }
     }
     
     </style>

@@ -90,13 +90,21 @@ div {
   background-color: #f2f2f2;
   padding: 20px;
 }
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .form, input[type=text], input[type=email], input[type=submit], input[type=password] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 </style>
-<body style="background-image: url(background.jpg);">
+<body style="background-image: url(background.jpg); background-repeat: no-repeat;">
 
-<div><a href="index.html"><button class="blinking-button">&#8592;Back to Home</button></a></div>
 
 <div>
-    <form action="">
+  <div style="float:right;"><a href="index.html"><button class="blinking-button">&#8592;Back to Home</button></a></div><br><br>
+<div class="form"><br>
+    <form action="get">
     <h3 style="text-align: center;">SIGN UP TO NATIONAL HYBRID SIWES</h3>
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
@@ -115,11 +123,9 @@ div {
   <h3 style="text-align: center;">Already have an account?<a href="login.html">Login</a></h3>
   <h4 style="text-align: center;">By clicking Create Account you agree to the NHS <span style="color: blue;">Terms of service, Privacy Policy.</span></h4>
 </div>
+</div>
 
 </body>
 
 
-</html>
-
-</body>
 </html>
